@@ -1,12 +1,14 @@
 from datetime import datetime
 
-napoleon_burns_moscow = datetime(year=1812, month=9, day=14)
+now = datetime.now()
 
-current_date = datetime.now()
+timestamp = datetime.timestamp(now)
 
-days_since = current_date.toordinal() - napoleon_burns_moscow.toordinal()
+print(timestamp)
 
-print(days_since)
+timestamp = 1617183600
+dt_object = datetime.fromtimestamp(timestamp)
+print(dt_object)
 
 
 
