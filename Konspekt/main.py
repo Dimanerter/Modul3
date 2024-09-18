@@ -1,8 +1,5 @@
 import datetime
+specific_date = datetime.datetime(2020, 1, 7, 14, 30, 15)
 
-date_part = datetime.date(2023, 12,14)
-time_part = datetime.time(12,30,15)
 
-combined_datetime = datetime.datetime.combine(date_part, time_part)
-
-print(combined_datetime)
+print(specific_date)
