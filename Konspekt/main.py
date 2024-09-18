@@ -1,9 +1,8 @@
-from datetime import datetime
+from datetime import datetime 
 
-datetime1 = datetime(2023,3,14,12,0)
-datetime2 = datetime(2023,3,15,12,0)
+seventh_day_2019 = datetime(year = 2019, month=1, day=7, hour=14)
+seventh_day_2020 = datetime(year = 2020, month=1, day=7, hour=14)
 
-print(datetime1 == datetime2)
-print(datetime1 != datetime2)
-print(datetime1 < datetime2)
-print(datetime1 > datetime2)
+difference = seventh_day_2020 - seventh_day_2019
+print(difference)
+print(difference.total_seconds())
