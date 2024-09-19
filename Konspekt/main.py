@@ -1,7 +1,6 @@
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
-local_now = datetime.now()
-utc_now = datetime.now(timezone.utc)
+utc_time = datetime.now(timezone.utc)
 
-print(local_now)
-print(utc_now)
+eastern_time = utc_time.astimezone(timezone(timedelta(hours=-5)))
+print(eastern_time)
