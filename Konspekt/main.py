@@ -1,7 +1,7 @@
-from datetime import datetime 
+from datetime import datetime, timezone
 
-now = datetime.now()
+local_now = datetime.now()
+utc_now = datetime.now(timezone.utc)
 
-iso_calendar = now.isocalendar()
-print(f'ISO year : {iso_calendar[0]}, ISO Week: {iso_calendar[1]}, ISO week day: {iso_calendar[2]}')
-
+print(local_now)
+print(utc_now)
