@@ -1,15 +1,7 @@
 from datetime import datetime
 
-now = datetime.now()
+date_string = "2023.03.14"
 
-formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
-print(formatted_date)
+datetime_object = datetime.strptime(date_string, "%Y.%m.%d")
+print(datetime_object)
 
-formatted_date_only = now.strftime("%A, %d, %B %Y")
-print(formatted_date_only)
-
-formatted_time_only = now.strftime("%I:%M %p")
-print(formatted_time_only)
-
-formatted_date_only = now.strftime("%d.%m.%Y")
-print(formatted_date_only)
