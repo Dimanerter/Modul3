@@ -2,12 +2,8 @@ from datetime import datetime
 
 now = datetime.now()
 
-# Конвертация в формат ISO 8601
-iso_format = now.isoformat()
-print(iso_format)
+# Использование isoweekday() для получения дня недели
 
-iso_date_string = "2023-03-14T12:39:29.992996"
+day_of_week = now.isoweekday()
 
-# Конвертация из ISO формата
-date_from_iso = datetime.fromisoformat(iso_date_string)
-print(date_from_iso)
+print(f"Сьогодні: {day_of_week}")
