@@ -2,8 +2,6 @@ from datetime import datetime
 
 now = datetime.now()
 
-# Использование isoweekday() для получения дня недели
+iso_calendar = now.isocalendar()
+print(f'ISO year : {iso_calendar[0]}, ISO Week: {iso_calendar[1]}, ISO week day: {iso_calendar[2]}')
 
-day_of_week = now.isoweekday()
-
-print(f"Сьогодні: {day_of_week}")
