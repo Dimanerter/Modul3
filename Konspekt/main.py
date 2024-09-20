@@ -1,9 +1,7 @@
-from datetime import datetime, timezone, timedelta
+import time 
 
-# Час у конкретній часовій зоні
-timezone_offset = timezone(timedelta(hours=2))  # Наприклад, UTC+2
-timezone_datetime = datetime(year=2023, month=3, day=14, hour=12, minute=30, second=0, tzinfo=timezone_offset)
+current_time = time.time()
+print(f"Поточний час: {current_time}")
 
-# Конвертація у формат ISO 8601
-iso_format_with_timezone = timezone_datetime.isoformat()
-print(iso_format_with_timezone)
+readable_time = time.ctime(current_time)
+print(f"Читабельний час: {readable_time}")
