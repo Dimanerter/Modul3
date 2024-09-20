@@ -1,4 +1,4 @@
 import random
 
-dice_roll = random.randint(1,6)
-print(f"Ви кинули {dice_roll}")
+fill_percentage = random.random() * 100
+print(f"Заповнення: {fill_percentage:.2f}%")
