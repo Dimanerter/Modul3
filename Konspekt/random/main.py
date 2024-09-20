@@ -1,5 +1,7 @@
 import random
 
-fruits = ['apple', 'banana', 'orange']
+items = ['яблуко', 'банан', 'вишня', 'диня']
 
-print(random.choice(fruits))
+chosen_item = random.choices(items, k=1)
+
+print(chosen_item)
