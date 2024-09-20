@@ -1,7 +1,6 @@
 import random
 
-items = ['яблуко', 'банан', 'вишня', 'диня']
+participants = ['Анна', 'Богдан', 'Віктор', 'Галина', 'Дмитро', 'Олена', 'Женя', 'Зорян', 'Ігор', 'Йосип']
 
-chosen_item = random.choices(items, k=1)
-
-print(chosen_item)
+team = random.sample(participants, 4)
+print(f"Команда: {team}")
