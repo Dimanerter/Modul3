@@ -1,7 +1,5 @@
 import random
 
-cards = ["Туз", "Король", "Дама", "Валет", "10", "9", "8", "7", "6"]
+fruits = ['apple', 'banana', 'orange']
 
-random.shuffle(cards)
-
-print(f"Перемішана колода: {cards}")
+print(random.choice(fruits))
