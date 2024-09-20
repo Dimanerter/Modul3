@@ -1,4 +1,7 @@
 import random
 
-fill_percentage = random.random() * 100
-print(f"Заповнення: {fill_percentage:.2f}%")
+cards = ["Туз", "Король", "Дама", "Валет", "10", "9", "8", "7", "6"]
+
+random.shuffle(cards)
+
+print(f"Перемішана колода: {cards}")
