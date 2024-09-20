@@ -1,6 +1,5 @@
-import random
+import random 
 
-participants = ['Анна', 'Богдан', 'Віктор', 'Галина', 'Дмитро', 'Олена', 'Женя', 'Зорян', 'Ігор', 'Йосип']
+price = random.uniform(50, 100)
 
-team = random.sample(participants, 4)
-print(f"Команда: {team}")
+print(f" Случайная цена: {price:.2f}")
