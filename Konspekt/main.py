@@ -1,7 +1,10 @@
 import time 
 
-current_time = time.time()
-print(f"Поточний час: {current_time}")
+start_time = time.perf_counter()
 
-local_time = time.localtime(current_time)
-print(f"Місцевий час: {local_time}")
+for _ in range(1_000_000):
+    pass
+end_time = time.perf_counter()
+
+execution_time = end_time - start_time
+print(f"Час виконання: {execution_time} секунд")
