@@ -25,5 +25,10 @@ end = 7
 print(s.find("er", start, end))
 print(s.find("q"))
 
+# метод rfind
 
+s = 'Some words'
+
+print(s.find("o"))
+print(s.rfind('o'))
 
