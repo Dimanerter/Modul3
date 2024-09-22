@@ -32,3 +32,15 @@ s = 'Some words'
 print(s.find("o"))
 print(s.rfind('o'))
 
+# Метод split
+
+text = "hello world"
+result = text.split() 
+print(result)
+
+text = "apple,banana,cherry"
+result = text.split(',')
+print(result)
+
+
+
