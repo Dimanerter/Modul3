@@ -42,5 +42,14 @@ text = "apple,banana,cherry"
 result = text.split(',')
 print(result)
 
+# Метод join
+
+list_of_string = ['hello', 'world']
+result = ' '.join(list_of_string)
+print(result)
+
+elements = ['earth', 'air', 'fire', 'water']
+result = ', '.join(elements)
+print(result)
 
 
