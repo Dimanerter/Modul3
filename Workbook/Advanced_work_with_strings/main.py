@@ -52,4 +52,7 @@ elements = ['earth', 'air', 'fire', 'water']
 result = ', '.join(elements)
 print(result)
 
+# Метод strip
 
+clean = '   spacious   '.strip()
+print(clean)
