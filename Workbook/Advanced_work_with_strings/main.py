@@ -56,3 +56,28 @@ print(result)
 
 clean = '   spacious   '.strip()
 print(clean)
+
+
+
+# Метод replace
+
+text = "Hello world"
+new_text = text.replace('world', '')
+print(text, new_text)
+
+
+text = "one fish, two fish, red fish, blue fish"
+new_text = text.replace("fish", "bird", 2)
+print(new_text)
+
+# Program
+
+url_link = "<https://www.google.com/search?q=Cat+and+dog&ie=utf-8&oe=utf-8&aq=t>"
+_ , query = url_link.split("?")
+print(query)
+
+obj_query = {}
+for el in query.split('&'):
+    key, value = el.split('=')
+    obj_query.update({key: value.replace('+', ' ')})
+print(obj_query)
