@@ -1,3 +1,5 @@
+import re
+
 text = """This is first line 
 And second line
 Last third line"""
@@ -161,3 +163,21 @@ print(formatted)
 progress = 0.5
 formatted = f"{progress:.0%}"
 print(formatted)
+
+#Метод search
+text = "Вивчення Python може бути веселим."
+pattern = "Python"
+match = re.search(pattern, text)
+
+if match:
+    print("Знайдено:", match.group())
+else:
+    print("Не знайдено.")
+
+
+text = "Вивчення Python може бути веселим."
+pattern = r"в\w*м"
+match = re.search(pattern, text, re.IGNORECASE)
+if match:
+    print("Знайдено: ", match.group())
+
