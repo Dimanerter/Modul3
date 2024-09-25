@@ -181,3 +181,26 @@ match = re.search(pattern, text, re.IGNORECASE)
 if match:
     print("Знайдено: ", match.group())
 
+
+text = "Рік 2023 був складнішим, ніж 2022"
+
+pattern = r"\d+"
+matchs = re.findall(pattern, text)
+print(matchs)
+
+text = "Python - це проста, але потужна мова програмування."
+pattern = r"\w+"
+matchs = re.findall(pattern, text)
+
+print(matchs)
+
+
+text = "Контакти: example1@example.com, example2@sample.org"
+pattern = r"\w+@\w+\.\w+"
+
+matches = re.findall(pattern, text)
+print(matches)
+
+
+#Метод sub
+
