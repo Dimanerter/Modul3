@@ -4,17 +4,17 @@ text = """This is first line
 And second line
 Last third line"""
 
-print(text)
+# print(text)
 
 
-print("Hello\nWorld")
-print("Hello\tWorld")
-print("Hello my little\rsister")
-print("Hello\bWorld")
-print("Hello\\World")
-print("Hello\n\vWorld")
-print("it\'s a beautiful day")
-print("He said, \"Hello\"")
+# print("Hello\nWorld")
+# print("Hello\tWorld")
+# print("Hello my little\rsister")
+# print("Hello\bWorld")
+# print("Hello\\World")
+# print("Hello\n\vWorld")
+# print("it\'s a beautiful day")
+# print("He said, \"Hello\"")
 
 
 # метод find
@@ -24,40 +24,40 @@ s = "Hi there!"
 start = 0
 end = 7
 
-print(s.find("er", start, end))
-print(s.find("q"))
+# print(s.find("er", start, end))
+# print(s.find("q"))
 
 # метод rfind
 
 s = 'Some words'
 
-print(s.find("o"))
-print(s.rfind('o'))
+# print(s.find("o"))
+# print(s.rfind('o'))
 
 # Метод split
 
 text = "hello world"
 result = text.split() 
-print(result)
+# print(result)
 
 text = "apple,banana,cherry"
 result = text.split(',')
-print(result)
+# print(result)
 
 # Метод join
 
 list_of_string = ['hello', 'world']
 result = ' '.join(list_of_string)
-print(result)
+# print(result)
 
 elements = ['earth', 'air', 'fire', 'water']
 result = ', '.join(elements)
-print(result)
+# print(result)
 
 # Метод strip
 
 clean = '   spacious   '.strip()
-print(clean)
+# print(clean)
 
 
 
@@ -65,24 +65,24 @@ print(clean)
 
 text = "Hello world"
 new_text = text.replace('world', '')
-print(text, new_text)
+# print(text, new_text)
 
 
 text = "one fish, two fish, red fish, blue fish"
 new_text = text.replace("fish", "bird", 2)
-print(new_text)
+# print(new_text)
 
 # Program
 
 url_link = "<https://www.google.com/search?q=Cat+and+dog&ie=utf-8&oe=utf-8&aq=t>"
 _ , query = url_link.split("?")
-print(query)
+# print(query)
 
 obj_query = {}
 for el in query.split('&'):
     key, value = el.split('=')
     obj_query.update({key: value.replace('+', ' ')})
-print(obj_query)
+# print(obj_query)
 
 
 # Translate
@@ -92,11 +92,11 @@ outtab = "12345"
 trantab = str.maketrans(intab, outtab)
 
 stri = "This is string example"
-print(stri.translate(trantab))
+# print(stri.translate(trantab))
 
 trantab = str.maketrans('', '', intab)
 stri = "This is string example"
-print(stri.translate(trantab))
+# print(stri.translate(trantab))
 
 # from 16 to 2
 
@@ -112,7 +112,7 @@ for s, c in zip(symbols, code):
     MAP[ord(s.lower())] = c
 
 result = "34 DF 56 AC".translate(MAP)
-print(result)
+# print(result)
 
 
 # Text to Morze
@@ -135,72 +135,93 @@ result_ = ""
 for ch in string:
     result_ = result_ + ch.upper().translate(table_morze_dict)
 
-print(result_)
+# print(result_)
 
 # Форматирование 
 
 for i in range(8):
     s = f"int: {i:d}; hex: {i:#x}; oct: {i:#o}; bin: {i:#b}"
-    print(s)
+    # print(s)
 
 price = 19.99
 quantity = 3
 total = f"Total: {price* quantity:.2f}"
-print(total)
+# print(total)
 
 # width = 2
-for num in range(12):
-    print(f'{num:^10} {num**2:^10} {num**3:^10}')
+# for num in range(12):
+# #     print(f'{num:^10} {num**2:^10} {num**3:^10}')
 
 name = 'Alice'
 formatted = f"{name:>10}"
-print(formatted)
+# print(formatted)
 
 completion = 0.756
 formatted = f"{completion:.1%}"
-print(formatted)
+# print(formatted)
 
 progress = 0.5
 formatted = f"{progress:.0%}"
-print(formatted)
+# print(formatted)
 
 #Метод search
 text = "Вивчення Python може бути веселим."
 pattern = "Python"
 match = re.search(pattern, text)
 
-if match:
-    print("Знайдено:", match.group())
-else:
-    print("Не знайдено.")
+# if match:
+# #     print("Знайдено:", match.group())
+# else:
+# #     print("Не знайдено.")
 
 
 text = "Вивчення Python може бути веселим."
 pattern = r"в\w*м"
 match = re.search(pattern, text, re.IGNORECASE)
-if match:
-    print("Знайдено: ", match.group())
+# if match:
+# #     print("Знайдено: ", match.group())
 
 
 text = "Рік 2023 був складнішим, ніж 2022"
 
 pattern = r"\d+"
 matchs = re.findall(pattern, text)
-print(matchs)
+# # print(matchs)
 
 text = "Python - це проста, але потужна мова програмування."
 pattern = r"\w+"
 matchs = re.findall(pattern, text)
 
-print(matchs)
+# # print(matchs)
 
 
 text = "Контакти: example1@example.com, example2@sample.org"
 pattern = r"\w+@\w+\.\w+"
 
 matches = re.findall(pattern, text)
-print(matches)
+# # print(matches)
 
 
 #Метод sub
 
+file_name = "Мій документ Python.txt"
+pattern = r"\s"
+replacement = "_"
+formatted_name = re.sub(pattern, replacement, file_name)
+# print(formatted_name)
+
+text = "Python - потужна, універсальна; мова!"
+pattern = r"[;,\-:!\.]"
+replacement = ""
+modified_text = re.sub(pattern, replacement, text)
+# print(modified_text)
+
+phone = """
+        Михайло Куліш: 050-171-1634
+        Вікторія Кущ: 063-134-1729
+        Оксана Гавриленко: 068-234-5612
+        """
+pattern = r"(\d{3})-(\d{3})-(\d{4})"
+replacement = r"(\1) \2-\3"
+formatted_phone = re.sub(pattern, replacement, phone)
+print(formatted_phone)
