@@ -224,4 +224,17 @@ phone = """
 pattern = r"(\d{3})-(\d{3})-(\d{4})"
 replacement = r"(\1) \2-\3"
 formatted_phone = re.sub(pattern, replacement, phone)
-print(formatted_phone)
+# print(formatted_phone)
+
+
+#Метод split
+text = "Python - це проста, але потужна мова програмування!"
+pattern = r"[;,\-:!\s]+"
+words = re.split(pattern, text)
+# print(words)
+
+text = "apple#banana!mango@orange;kiwi"
+pattern = r"[#@;!]"
+fruits = re.split(pattern, text)
+
+print(fruits)
